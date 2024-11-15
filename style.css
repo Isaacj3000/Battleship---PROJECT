@@ -1,4 +1,5 @@
-  
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Tiny5&display=swap');
+
 body {
     background-image: rgb(247, 245, 245);
     /* Use a system font, if none are available use an available sans-sarif */
@@ -8,28 +9,141 @@ body {
     flex-direction: column;
     align-items: center;
     font-size: xx-large;
-
+ 
+    background-image: url(//t3.ftcdn.net/jpg/05/92/31/70/360_F_592317043_rOOpTliZqnmqLi3YwWxGIgVyyfk5nMaM.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-blend-mode: color-dodge;
+    background-position: center;
+    
   }
   
    .board {
+    display: grid;
+    grid-template-columns: repeat(5,1fr); 
+    grid-gap: 3px;
+    width: 300px;
+    margin: auto;
+
+    
+  }
+  .sqr {
+    width: 50px;
+    height: 50px;
     display: flex;
-    flex-wrap: wrap;
-    width: 400px;
+    justify-content: center;
+    align-items: center;
+    background-color: #d3d3d3;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  span, h4 {
+    color: white;
   }
   
-  .sqr {
-    width: 30%;
-    aspect-ratio: 6/5;
-    border: 1px solid rgba(18, 12, 12, 0.335);
-    font-size: 60px;
-    text-align: center;
-    line-height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #0b15d7;
-    cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.1s ease;
+ .sqr:hover {
+  background-color: #918e9c;
+  transform: scale(1.05);
  }
+ #message {
+  text-align: center;
+  margin-bottom: 200px;
+  font-family: "Smokum", serif;
+  font-weight: 400;
+  font-style: normal;
+ font-size: 24px;
+  color: #ffffff;
+  background-color: #000000c0;
+  padding: 10px;
+  width: 60%;
+  margin: 20px auto;
+  border-radius: 5px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden; /* Hide extra text until it "types" */
+  border: 2px solid #fff;
+  }
   
+  /* Typing animation */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  #message {
+    animation: typing 5s steps(50) 1s forwards;
+    }
+
+.Stormbringer {
+  background-image: url('images/Stormbringer.jpg');
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+}
+.SeaFury {
+  background-image: url('images/SeaFury.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  
+}
+.Ironclad {
+  background-image: url('images/Ironclad.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+.AbyssalQueen {
+  background-image: url('images/AbyssalQueen.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+.TitanWrath {
+  background-image: url('images/TitanWrath.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+.VengefulWarden { 
+  background-image: url('images/VengefulWarden.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+.SeaSerpent {
+  background-image: url('images/SeaSerpent.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+.BlackLeviathan {
+  background-image: url('images/BlackLeviathan.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.RogueWave {
+  background-image: url('images/RogueWave.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.EmberRequiem {
+  background-image: url('images/EmberRequiem.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+} 
   

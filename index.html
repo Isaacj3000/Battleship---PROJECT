@@ -3,48 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
-  <script defer src="./js/app.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./app.js">
+    let play = document.getElementById("play")
+  </script>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Tiny5&display=swap');
-    body{
-      background-image: url(//t3.ftcdn.net/jpg/05/92/31/70/360_F_592317043_rOOpTliZqnmqLi3YwWxGIgVyyfk5nMaM.jpg);
-      background-size: contain;
-      background-repeat: no-repeat; 
-      background-blend-mode: color-dodge;
-      
-    }
     </style>
   <title>Battleship</title>
 </head>
 <body>
+  <button id="play">play</button>
   <h1>Battleship</h1>
-  <h2 id="message">Message</h2>
+  <h2 id="message"> The player who matches the most ships will be the winner.</h2>
+  
+  <div>
+    <h4>Player One Score</h4>
+    <span id="player1-count"></span>
+</div>
+<div>
+    <h4>Player Two Score</h4>
+    <span id="player2-count"></span>
+</div>
 
   <section class="board">
-    <div class="sqr" id="0">
-      <img src="Battleship.jpg" width="100%" class="ship">
-    </div>
     <div class="sqr" id="1"></div>
-    <div class="sqr" id="2">
-      <img src="Battleship4.jpg" width="100%" class="ship">
-    </div>
+    <div class="sqr" id="2"></div>
     <div class="sqr" id="3"></div>
     <div class="sqr" id="4"></div>
     <div class="sqr" id="5"></div>
     <div class="sqr" id="6"></div>
-    <div class="sqr" id="7">
-      <img src="Battleship2.jpg" width="100%" class="ship">
-    </div>
+    <div class="sqr" id="7"></div>
     <div class="sqr" id="8"></div>
     <div class="sqr" id="9"></div>
     <div class="sqr" id="10"></div>
     <div class="sqr" id="11"></div>
-    <div class="sqr" id="12">
-      <img src="Battleship3.jpg" width="100%" class="ship">
-    </div>
+    <div class="sqr" id="12"></div>
     <div class="sqr" id="13"></div>
     <div class="sqr" id="14"></div>
+    <div class="sqr" id="15"></div>
+    <div class="sqr" id="16"></div>
+    <div class="sqr" id="17"></div>
+    <div class="sqr" id="18"></div>
+    <div class="sqr" id="19"></div>
+    <div class="sqr" id="20"></div>
+    
+  
+   
+    
   </section>
+  <div class="button-container"><button>Restart</button></div>
+
 </body>
 </html>
