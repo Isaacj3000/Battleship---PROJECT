@@ -4,28 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
-  <script defer src="./app.js">
-    let play = document.getElementById("play")
-  </script>
-  <style>
-    </style>
   <title>Battleship</title>
 </head>
 <body>
-  <button id="play">play</button>
+  <button id="play">Play</button>
   <h1>Battleship</h1>
-  <h2 id="message"> The player who matches the most ships will be the winner.</h2>
-  
+  <h2 id="message">The player who matches the most ships will be the winner.</h2>
+
   <div>
     <h4>Player One Score</h4>
     <span id="player1-count"></span>
-</div>
-<div>
+  </div>
+  <div>
     <h4>Player Two Score</h4>
     <span id="player2-count"></span>
-</div>
+  </div>
 
   <section class="board">
+    <!-- Squares -->
     <div class="sqr" id="1"></div>
     <div class="sqr" id="2"></div>
     <div class="sqr" id="3"></div>
@@ -46,12 +42,23 @@
     <div class="sqr" id="18"></div>
     <div class="sqr" id="19"></div>
     <div class="sqr" id="20"></div>
-    
-  
-   
-    
   </section>
-  <div class="button-container"><button>Restart</button></div>
 
-</body>
-</html>
+  <div class="button-container">
+    <button>Restart</button>
+  </div>
+
+  <!-- Move JavaScript code here to avoid DOM issues -->
+  <script defer src="./app.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const play = document.getElementById("play");
+      
+      play.addEventListener("click", playMusic);
+      
+      function playMusic() {
+        let audio = new Audio("poc.mp3");
+        audio.play();
+      }
+    });
+  </script>
