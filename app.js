@@ -159,7 +159,9 @@ function resetGame() {
 function playMusic() {
     let audio = new audio("poc.mp3");
         audio.play()
-     play.addEventListener("click", playMusic);
+    // let play = document.getElementById("play")
+    //  play.addEventListener("click", playMusic);
+    
 }
 window.onload = function() {
     const messageEl = document.getElementById('message');
